@@ -1,0 +1,165 @@
+*{margin:0px;padding:0px;}
+span{
+	display: block;
+	moz-user-select: -moz-none; 
+	-moz-user-select: none; 
+	-o-user-select:none; 
+	-khtml-user-select:none; 
+	-webkit-user-select:none; 
+	-ms-user-select:none; 
+	user-select:none;
+}
+.musicbox{
+	width:1250px;
+	margin:20px auto;
+}
+.musicbox .title{
+	width:100%;
+	text-align: center;
+}
+/*中间样式*/
+.musicbox .middle{
+	width:100%;
+	height:550px;
+}
+.musicbox .middle .container1{
+	width:400px;
+	height:550px;
+	float:left;
+	background:#dddad1;
+}
+.musicbox .middle .container2{
+	width:800px;
+	height:550px;
+	float:right;
+	box-sizing: border-box;
+	padding:0px 32px;
+	background:#f3f9f9;
+}
+/*容器内容*/
+.musicbox .middle .container1 .content{
+	width:100%;
+	font-size:22px;
+	text-align: center;
+}
+.musicbox .middle .container2 .content{
+	width:200px;
+	height:250px;
+	margin:10px 20px;
+	float:left;
+	color:#fff;
+	background:#3B3B3B;
+	text-align: center;
+}
+/*footer采用flex弹性布局*/
+.footer{
+	width:100%;
+	margin-top:5px;
+	display: flex;
+	flex-direction:row;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	padding:10px 5px;
+	background:#3B3B3B;
+}
+.footer .coverImg{
+	width:150px;
+	height:150px;
+}
+.footer .coverImg img{
+	width:100%;
+	height:150px;
+	border-radius:50%;
+	border:none;
+	transition: 1s linear;
+	-ms-transition: 1s linear;
+	-webkit-transition: 1s linear;
+	-moz-transition: 1s linear;
+}
+/*musicAudio*/
+.footer .musicAudio{
+	width:1050px;
+	height:150px;
+	box-sizing: border-box;
+	padding:10px;
+	display: flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items: center;
+}
+.footer .musicAudio .top{
+	width:100%;
+	height:100px;
+	display: flex;
+	flex-direction:row;
+	justify-content:space-between;
+}
+.footer .musicAudio i{
+	color:#fff;
+	font-size:32px;
+	cursor:pointer;
+}
+/*音量*/
+.footer .musicAudio .top .volumebox{
+	width:150px;
+	display: flex;
+	flex-direction:row;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+.footer .musicAudio .top .volumebox .sliderbox{
+	cursor: pointer;
+	width:100px;
+	height:2px;
+	background:#ccc;
+}
+.footer .musicAudio .top .volumebox .sliderbox .slider{
+	width:100%;
+	height:2px;
+	background:blue;
+}
+/*播放*/
+.footer .musicAudio .top .playbox{
+	width:300px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction:row;
+	justify-content: space-around;
+	align-items: center;
+}
+.footer .musicAudio .top .playbox .icon-bofang{
+	box-sizing: border-box;
+	padding:5px;
+	font-size:54px;
+}
+/*循环*/
+.footer .musicAudio .top .loopbox{
+	width:150px;
+	display: flex;
+	flex-direction:row;
+	justify-content: space-around;
+	align-items: center;
+}
+/*bottom*/
+.footer .musicAudio .bottom{
+	width:100%;
+	height:50px;
+	display: flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items: center;
+	color:#fff;
+}
+.footer .musicAudio .bottom .sliderbox{
+	cursor: pointer;
+	width:910px;
+	height:2px;
+	background:#ccc;
+}
+.footer .musicAudio .bottom .sliderbox .slider{
+	width:0px;
+	height:2px;
+	background:blue;
+}
